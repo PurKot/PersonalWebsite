@@ -10,7 +10,6 @@ $(document).ready(function(){
               $('.navbar').removeClass('solid');
           }
         });
-   
          
  $('.ml1 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -44,3 +43,10 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1100
   });
+  
+  $(".navbar a").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data('value')).offset().top
+  },1000)
+  
+ })

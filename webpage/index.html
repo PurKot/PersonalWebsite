@@ -5,34 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<meta name="description" content="" />
 	<!--BootStrap CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Purnima Kotharu</title>
 </head>
 
 <body>
 	<!-- navbar -->  
-	<nav class="navbar navbar-expand-lg fixed-top ">  
-		 <a class="navbar-brand" href="#">Home</a>
+	<nav class="navbar navbar-expand-lg fixed-top .bg-light">  
+		 <a class="navbar-brand" href="#">PK</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-		 <span class="navbar-toggler-icon"></span>
+		 <i class="fas fa-bars"></i>
 		</button>
 		<div class="collapse navbar-collapse " id="navbarSupportedContent">     
 			<ul class="navbar-nav mr-4">
+				<li class="nav-item active">
+			        <a class="nav-link active"data-value="home" href="#">Home <span class="sr-only">(current)</span></a>
+			     </li>
 				 <li class="nav-item">
 				     <a class="nav-link" data-value="about" href="#">About Me</a>        </li> 
 				     <li class="nav-item">
 				     <a class="nav-link" data-value="education" href="#">Education</a>        </li>   
-				<li class="nav-item">
+				<li class="nav-item"> 
+				    <a class="nav-link" data-value="exp" href="#">Experience</a></li>   
+				 <li class="nav-item">
 				    <a class="nav-link" data-value="skills"href="#">Skills</a>    
 				 </li>
 				 <li class="nav-item"> 
-				    <a class="nav-link" data-value="projects" href="#">Projects</a></li>   
+				  <a class="nav-link" data-value="projects" href="#">Projects</a></li>   
 				<li class="nav-item"> 
 				 <a class="nav-link" data-value="contact" href="#">Contact Me</a></li> 
 			</ul> 
+			<form class="form-inline">
+		      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+		    </form>
 		</div>
 	</nav>
 	
@@ -132,22 +141,125 @@
 		</div>
 	</div>
 	
-	<div class="skills" id="skills">
+	<div class="exp" id="exp">
 		<div class="container">
-	  		<h1 class="text-center">Skill Set</h1>
-				<div class="row">
-				
-				
-				</div>
+	  		<h1 class="text-center">Experience</h1>
+		    <!--first section-->
+		    <div class="row align-items-center how-it-works d-flex">
+		      <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+		        <div class="circle font-weight-bold">2018</div>
+		      </div>
+		      <div class="col-6">
+		        <h5>Graduate Assistant- Texas A&M University</h5>
+		        <p class="exp-text">For Info Systems class, teaching HTML, Excel, Access </p>
+		      </div>
+		    </div>
+		    <!--path between 1-2-->
+		    <div class="row timeline">
+		      <div class="col-2">
+		        <div class="corner top-right"></div>
+		      </div>
+		      <div class="col-8">
+		        <hr/>
+		      </div>
+		      <div class="col-2">
+		        <div class="corner left-bottom"></div>
+		      </div>
+		    </div>
+		    <!--second section-->
+		    <div class="row align-items-center justify-content-end how-it-works d-flex">
+		      <div class="col-6 text-right">
+		        <h5>Tech lead role- Honeywell</h5>
+		        <p class="exp-text">Lead team of 5 to develop enterprise level .Net web applications.</p>
+		      </div>
+		      <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+		        <div class="circle font-weight-bold">2015</div>
+		      </div>
+		    </div>
+		    <!--path between 2-3-->
+		    <div class="row timeline">
+		      <div class="col-2">
+		        <div class="corner right-bottom"></div>
+		      </div>
+		      <div class="col-8">
+		        <hr/>
+		      </div>
+		      <div class="col-2">
+		        <div class="corner top-left"></div>
+		      </div>
+		    </div>
+		    <!--third section-->
+		    <div class="row align-items-center how-it-works d-flex">
+		      <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+		        <div class="circle font-weight-bold">2013</div>
+		      </div>
+		      <div class="col-6">
+		        <h5>Senior Engineer- Honeywell</h5>
+		        <p class="exp-text">Design, develop web applications and provide production and implementation support</p>
+		      </div>
+		    </div>
+		     <div class="row timeline">
+		      <div class="col-2">
+		        <div class="corner top-right"></div>
+		      </div>
+		      <div class="col-8">
+		        <hr/>
+		      </div>
+		      <div class="col-2">
+		        <div class="corner left-bottom"></div>
+		      </div>
+		    </div>
+		    <!--fourth section-->
+		    <div class="row align-items-center justify-content-end how-it-works d-flex">
+		      <div class="col-6 text-right">
+		        <h5>Engineer- Honeywell</h5>
+		        <p class="exp-text">Debug and fix bugs on web applications, setup virtual dev and test environments.</p>
+		      </div>
+		      <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+		        <div class="circle font-weight-bold">2011</div>
+		      </div>
+		    </div>
+		    <!--path between 4-5-->
+		    <div class="row timeline">
+		      <div class="col-2">
+		        <div class="corner right-bottom"></div>
+		      </div>
+		      <div class="col-8">
+		        <hr/>
+		      </div>
+		      <div class="col-2">
+		        <div class="corner top-left"></div>
+		      </div>
+		    </div>
+		    <!--third section-->
+		    <div class="row align-items-center how-it-works d-flex">
+		      <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+		        <div class="circle font-weight-bold">2008</div>
+		      </div>
+		      <div class="col-6">
+		        <h5>Engineer- Honeywell</h5>
+		        <p class="exp-text">Create test design, test plan, automation scripts, perform automated and manual testing of web applications</p>
+		      </div>
+		    </div>
+			</div>
 		</div>
-	</div>
-	
-	<div class="projects" id="projects">
-		<div class="container">
-	  		<h1 class="text-center">Projects</h1>
-				<div class="row">
+		
+		<div class="skills" id="skills">
+			<div class="container">
+		  		<h1 class="text-center">Skill Set</h1>
+					<div class="row">
 					
-				</div>
+					
+					</div>
+			</div>
+		</div>
+		
+		<div class="projects" id="projects">
+			<div class="container">
+		  		<h1 class="text-center">Projects</h1>
+					<div class="row">
+						
+					</div>
 		</div>
 	</div>
 
