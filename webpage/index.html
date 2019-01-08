@@ -6,21 +6,23 @@
 	<meta name="description" content="" />
 	<!--BootStrap CDN-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	 <link href="css/main.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Purnima Kotharu</title>
 </head>
 
 <body>
-	<!-- navbar -->  
-	<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">  
-		 <a class="navbar-brand" href="#">PK</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+	<!-- navbar --> 
+	<nav class="navbar navbar-expand-lg fixed-top">  
+	  <div class="container-fluid">
+     	<a class="navbar-brand" href="#">Purnima K</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
 		 <i class="fas fa-bars"></i>
 		</button>
-		<div class="collapse navbar-collapse " id="navbarSupportedContent">     
-			<ul class="navbar-nav mr-4">
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">     
+			<ul class="navbar-nav navbar-right">
 				<li class="nav-item active">
 			        <a class="nav-link active"data-value="home" href="#">Home <span class="sr-only">(current)</span></a>
 			     </li>
@@ -35,16 +37,11 @@
 				 </li>
 				 <li class="nav-item"> 
 				  <a class="nav-link" data-value="projects" href="#">Projects</a></li>   
-				<li class="nav-item"> 
-				 <a class="nav-link" data-value="contact" href="#">Contact Me</a></li> 
-			</ul> 
-			<form class="form-inline">
-		      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-		    </form>
+			</ul>
 		</div>
+	</div>
 	</nav>
-	
+	<!--header-->	
 	<header class="header">
 		<div class="overlay">
 		  	<div class="container-fluid text-center">	
@@ -58,30 +55,43 @@
 		 
 				<div class="description">
 					<div class="bkrnd">
-					   <h2>
+					   <h3>
 					   		<p>Welcome to my personal website</p>
 					   		<p>It is developed using CI & CD approach, and is hosted on AWS EC2</p> 
-					    <button class="btn btn-outline-secondary btn-lg">See more</button>  
+					    <button class="btn btn-outline-secondary btn-lg" ><a href="#about">See more</a></button>  
 					    	
-					  </h2> 
+					  </h3> 
 					</div>
 				</div>
 	   		</div>
 	   	</div>
    	  
 	</header>
+	<!--footer-->
+	<nav class="navbar navbar-expand-lg fixed-bottom navbar-footer"> 
+		<div class="container">
+			    <hr>
+			        <div class="text-center center-block">
+			                <a href="https://www.facebook.com/purnima.valluri"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+				            <a href="https://www.linkedin.com/in/purnimakotharu/"><i id="social-linkedin" class="fa fa-linkedin-square fa-2x social"></i></a>
+				            <a href="https://github.com/PurKot"><i id="social-github" class="fa fa-github-square fa-2x social"></i></a>
+				            <a href="mailto:purnima.kotharu@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+					</div>
+			    <hr>
+		</div>
+	</nav>
 
 	<div class="about" id="about">
 		<div class="container">
 	  		<h1 class="text-center">About Me</h1>
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-4 col-sm-12 m1-auto" style="text-align:center;">
 						<img src="img/me.jpg" class="img-fluid">
-						<span class="text-justify">Full Stack Developer</span>
 					</div>
 					<div class="col-lg-8 col-md-8 col-sm-12 desc">
 					  
 						<h3>Purnima Kotharu</h3>
+						<h6><i>- Full Stack Developer, Cloud Software Engineer</i></h6>
 						<p>
 						   I am an MIS graduate student in my final year, studying at Texas A&M University.
 						   I am passionate about coding with focus on cloud technologies. I am a full stack
@@ -238,7 +248,9 @@
 		      </div>
 		    </div>
 		  </div>
-		</div>
+	</div>
+	
+		
 		
 	<div class="skills" id="skills">
 			<div class="container">
@@ -281,37 +293,76 @@
 			
 			
 		
-		<div class="projects" id="projects">
+	<div class="projects" id="projects">
 			<div class="container">
 		  		<h1 class="text-center">Projects</h1>
 					<div class="row">
-						 <div class="col-lg-4 col-md-4 col-sm-12">
-    
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-   
-   </div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-    
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    
-   </div>
-					</div>
+				        <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+				          <div class="card h-100">
+				            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+				            <div class="card-body">
+				              <h4 class="card-title">
+				                <a class="p-link" href="https://github.com/PurKot/busRoutePlanner-Java"><i>Route Planner</i></a>
+				              </h4>
+				              <p class="card-text">Java application built consuming REST services, Google maps API and uses Neo4j graph database, to provide possible bus routes between 2 places in Texas A&M Campus</p>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+				          <div class="card h-100">
+			 	            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+				            <div class="card-body">
+				              <h4 class="card-title">
+				                <a class="p-link" href="https://github.com/PurKot/messageBoard_prototype">Message Board</a>
+				              </h4>
+				              <p class="card-text">A Python CLI prototype developed to illustrate the working of message board application with both MongoDB and Redis databases</p>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+				          <div class="card h-100">
+			 	            <a href="#"><img class="card-img-top" src="img/mywebsite.jpg" alt=""></a>
+				            <div class="card-body">
+				              <h4 class="card-title">
+				                <a class="p-link" href="https://github.com/PurKot/PersonalWebsite">Personal Website</a>
+				              </h4>
+				              <p class="card-text">This HTML website http://pur-kot.com is deployed by AWS CodeDeploy and AWS CloudFormation to an AWS EC2 instance. This project utlizes CI & CD approach using GitHub repository. </p>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+				          <div class="card h-100">
+			 	            <a href="#"><img class="card-img-top" src="img/vamoose.jpg" alt=""></a>
+				            <div class="card-body">
+				              <h4 class="card-title">
+				                <a class="p-link" href="https://vamoosetravels.com">Travel Website</a>
+				              </h4>
+				              <p class="card-text">This HTML website was developed using Wordpress as a prototype for a startup to seek seed funding.</p>
+				            </div>
+				          </div>
+				        </div>
+						<div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+				          <div class="card h-100">
+			 	            <a href="#"><img class="card-img-top" src="img/vamoose.jpg" alt=""></a>
+				            <div class="card-body">
+				              <h4 class="card-title">
+				                <a class="p-link" href="https://vamoosetravels.com">Aggie Stack</a>
+				              </h4>
+				              <p class="card-text">A Python CLI application for resource managament for cloud computing. It implements some of the features of OpenStack software. It also uses click and MongoDB</p>
+				            </div>
+				          </div>
+				        </div>
+				</div>
+			</div>
 		</div>
-	</div>
 
 
 
 	<!--- Javascript files-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script type="text/javascript" src='js/main.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src='js/main.js'></script>
 </body>
 
 </html>

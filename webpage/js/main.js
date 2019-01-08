@@ -4,13 +4,23 @@ $(document).ready(function(){
  });
  $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) { 
-              $('.navbar').addClass('solid');
+          var height = $(window).height();
+          var scrollTop = $(window).scrollTop();
+          
+          if(scrollTop >= height-40) { 
+              $('.navbar').addClass('solid-nav');
           } else {
-              $('.navbar').removeClass('solid');
+              $('.navbar').removeClass('solid-nav');
           }
         });
-         
+ $(function(){ 
+     var navMain = $(".navbar-collapse");
+
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+        
  $('.ml1 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
