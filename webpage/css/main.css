@@ -44,17 +44,46 @@ color: white;
   margin-right: 0.8em !important;
   font-size: 0.8em;
   font-family: 'Oswald';
+   -webkit-transform: scale(1);
+     
+     /* Browser Variations: */
+     
+     -moz-transform: scale(1);
+     -o-transform: scale(1);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
 }
 
 .navbar-brand {
   font-family: 'Allura';
-  font-size: 0.9 em;
+  font-size: 1 em;
   color: white;
+  -webkit-transform: scale(1);
+     
+     /* Browser Variations: */
+     
+     -moz-transform: scale(1);
+     -o-transform: scale(1);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
 }
 
+.navbar-brand:hover {
+background: rgba(255, 255, 255, 0.5);
+  color: black;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
 .nav-link:hover {
-  background: #60462F;
-  color: #cccc;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  font-style:bold;
 }
 
 .navbar-collapse {
@@ -178,7 +207,7 @@ color: white;
  /* Footer*/
  .navbar-footer{
  height: 2em;
- z-index: 99;
+ z-index: 100;
  opacity: 1;
  
  }
@@ -414,7 +443,6 @@ font-size: 0.8em;
  padding: 1em;
  position: relative;
  background-color: #e5e8ec;
- z-index:-1;
 }
 .skills h1{
  color:#60462F;
@@ -427,16 +455,18 @@ font-size: 0.8em;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  z-index: 98;
 }
 .bar{
   height: 30px;
   max-width: 800px;
   margin: 0 auto 10px auto;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 0.6em;
   color: white;
   padding: 0 0 0 10px;
   position: relative;
+  z-index: 99;
 }
 .bar::before{
   content: '';
@@ -547,8 +577,7 @@ background-color: #d9d9d9;
  padding: 1em;
  position: relative;
  background-color: #e5e8ec;
- z-index:-1;
-}
+ }
 .projects h1{
  color:#60462F;
  margin: auto;
