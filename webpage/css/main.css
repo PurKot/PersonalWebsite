@@ -225,11 +225,12 @@ border-top: 3px solid black;
  margin: 2em 1em;
  padding: 1em;
  position: relative;
- background-color: #e5e8ec;
+ background-color: white;
+ font-family: "Times New Roman";
  
 }
 .about h1{
- color:#60462F;
+ color:black;
  margin: auto;
  margin-top: 2em;
   margin-bottom: 1em;
@@ -242,7 +243,7 @@ border-top: 3px solid black;
 }
 .about span{
  display: block;
- color: #888;
+ color: black;
  position: absolute;
  left:3em;
  font-size: 1em;
@@ -250,15 +251,16 @@ border-top: 3px solid black;
 }
 .about .desc{
  padding: 2em;
- border-left:4px solid #10828C;
+ border-left:4px solid black;
  font-size:0.8em;
 }
 .about .desc h3{
- color: #10828C;
+ color: black;
 }
 .about .desc p{
- line-height:2;
- color:#888;
+ line-height:1.5em;
+ color:black;
+ font-size: 1em;
 }
 .about.aboutcnt {
 padding: 1em;
@@ -337,7 +339,7 @@ text-align:center;
 }
 
 .card {
-  margin-top: 10px;
+  margin-top: 1em;
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
@@ -345,7 +347,7 @@ text-align:center;
 }
 .card span.card-title {
     color: blue;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
@@ -371,7 +373,7 @@ text-align:center;
   background:rgb(255,255,255,0.8);
 }
 .card .card-content {
-  padding: 16px;
+  padding: 1em;
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
   box-sizing: border-box;
@@ -381,15 +383,15 @@ text-align:center;
   color: inherit;
 }
 .card .card-content span.card-title {
-  line-height: 48px;
+  line-height: 1em;
 }
 .card .card-action {
   border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 16px;
+  padding: 1em;
 }
 .card .card-action a {
   color: #ffab40;
-  margin-right: 16px;
+  margin-right: 1em;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
